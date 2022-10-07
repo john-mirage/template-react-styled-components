@@ -7,12 +7,12 @@ import theme from "./theme";
 const App: FunctionComponent = () => {
   return (
     <>
-      <GlobalStyle/>
+      <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Styled.App></Styled.App>
       </ThemeProvider>
     </>
   );
-}
+};
 
 export default App;
