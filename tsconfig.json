@@ -19,6 +19,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@images/*": ["src/images/*"],
+      "@test/*": ["src/test/*"],
     },
     "types": ["vitest/globals"]
   },
