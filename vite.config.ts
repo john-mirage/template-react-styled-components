@@ -20,6 +20,7 @@ export default defineConfig({
       "@components": resolve(__dirname, "src/components"),
       "@images": resolve(__dirname, "src/images"),
       "@test": resolve(__dirname, "src/test"),
+      "@utils": resolve(__dirname, "src/utils"),
     },
   },
   test: {
