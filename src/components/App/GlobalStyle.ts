@@ -26,18 +26,17 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    min-height: 100vh;
     line-height: 1.5;
     font-family:
       system-ui,
       -apple-system,
-      'Segoe UI',
+      "Segoe UI",
       Roboto,
       Helvetica,
       Arial,
       sans-serif,
-      'Apple Color Emoji',
-      'Segoe UI Emoji';
+      "Apple Color Emoji",
+      "Segoe UI Emoji";
   }
 
   a {
