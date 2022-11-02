@@ -8,7 +8,9 @@ const App = () => {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Styled.App></Styled.App>
+        <Styled.App>
+          <Styled.Title>Hello word</Styled.Title>
+        </Styled.App>
       </ThemeProvider>
     </>
   );
