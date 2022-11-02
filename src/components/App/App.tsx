@@ -1,8 +1,8 @@
+import GlobalStyle from "@styles/styled-components.global";
+import theme from "@styles/styled-components.theme";
 import { FunctionComponent } from "react";
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "./GlobalStyle";
 import * as Styled from "./App.style";
-import theme from "./theme";
 
 const App: FunctionComponent = () => {
   return (
