@@ -1,16 +1,18 @@
 import GlobalStyle from "@styles/styled-components.global";
 import theme from "@styles/styled-components.theme";
 import { ThemeProvider } from "styled-components";
-import * as Styled from "./App.style";
+import * as SC from "./App.style";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Styled.App>
-          <Styled.Title>Hello word</Styled.Title>
-        </Styled.App>
+        <SC.App>
+          <SC.Title>
+            React with <span>Styled components</span>
+          </SC.Title>
+        </SC.App>
       </ThemeProvider>
     </>
   );

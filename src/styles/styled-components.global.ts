@@ -1,10 +1,20 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
+import theme from "@styles/styled-components.theme";
 
 const GlobalStyle = createGlobalStyle`
   *,
   *::before,
   *::after {
     box-sizing: border-box;
+  }
+  
+  ${
+    theme.fontRootSize !== 16 &&
+    css`
+      html {
+        font-size: ${String(theme.fontRootSize)}px;
+      }
+    `
   }
 
   body,
@@ -32,6 +42,8 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     text-rendering: optimizespeed;
     line-height: 1.5;
+    font-family: ${theme.fontFamilyStack};
+    background-color: ${theme.backgroundColor}
   }
 
   a {
