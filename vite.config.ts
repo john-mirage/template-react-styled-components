@@ -5,7 +5,6 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/repository-name/",
   plugins: [
     react({
       babel: {
@@ -17,6 +16,7 @@ export default defineConfig({
     alias: {
       "@components": resolve(__dirname, "src/components"),
       "@images": resolve(__dirname, "src/images"),
+      "@styles": resolve(__dirname, "src/styles"),
       "@test": resolve(__dirname, "src/test"),
       "@utils": resolve(__dirname, "src/utils"),
     },
