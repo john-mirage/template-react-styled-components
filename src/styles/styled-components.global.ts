@@ -9,10 +9,10 @@ const GlobalStyle = createGlobalStyle`
   }
   
   ${
-    theme.fontRootSize !== 16 &&
+    theme.font.root !== 16 &&
     css`
       html {
-        font-size: ${String(theme.fontRootSize)}px;
+        font-size: ${String(theme.font.root)}px;
       }
     `
   }
@@ -42,8 +42,8 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     text-rendering: optimizespeed;
     line-height: 1.5;
-    font-family: ${theme.fontFamilyStack};
-    background-color: ${theme.backgroundColor}
+    font-family: ${theme.font.stack};
+    background-color: ${theme.color.background}
   }
 
   a {
