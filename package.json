@@ -11,7 +11,8 @@
     "format": "npx prettier --write .",
     "coverage": "vitest run --coverage",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "icons": "npx @svgr/cli -- src/images"
   },
   "dependencies": {
     "react": "^18.2.0",

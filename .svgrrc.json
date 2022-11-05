@@ -1,14 +1,9 @@
 {
-  "typescript": true,
+  "jsxRuntime": "automatic",
+  "outDir": "src/components/Icon",
   "ref": true,
   "svgoConfig": {
     "plugins": [
-      {
-        "name": "removeAttrs",
-        "params": {
-          "attrs": "(fill|stroke)"
-        }
-      },
       {
         "name": "removeDimensions",
         "active": true
@@ -18,5 +13,6 @@
         "active": true
       }
     ]
-  }
+  },
+  "typescript": true
 }
